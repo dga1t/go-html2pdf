@@ -202,7 +202,7 @@ func main() {
 	mux := http.NewServeMux()
 	mux.HandleFunc("/upload", uploadFile)
 
-	err = http.ListenAndServe("127.0.0.1:3333", mux)
+	err = http.ListenAndServe("0.0.0.0:3333", mux)
 
 	if err != nil {
 		log.Printf("Error starting server: %s\n", err)
