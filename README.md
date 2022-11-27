@@ -28,6 +28,7 @@ docker run -p 3333:3333 -ti html2pdf
 ```
 curl -i -X POST -F "file=@/***/testArchive.zip" http://localhost:3333/upload
 ```
+Converted PDF file will be in `./pdfs` folder.
 
 ## License
 
